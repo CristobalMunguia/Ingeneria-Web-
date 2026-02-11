@@ -1,0 +1,26 @@
+.header {
+    background-color: #4f502c;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #1a252f;
+    text-align: center;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+
+/* FOOTER */
+.footer {
+    clear: both;
+    margin-top: 10px;
+    background-color: #4f502c;
+    color: white;
+    padding: 15px;
+    border: 3px solid #1a252f;
+    text-align: center;
+}

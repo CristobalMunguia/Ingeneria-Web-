@@ -1,0 +1,36 @@
+/* Aplicando box-sizing para incluir padding y border en el width/height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #4c4eaf;
+    color: white;
+    padding: 20px; /* padding aplicado */
+    text-align: center;
+    
+    border-bottom: 4px solid #333; /* borde aplicado */
+    margin-bottom: 20px; /* margen aplicado */
+}
+
+
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px; /* padding aplicado */
+    border-top: 4px solid #333; /* borde aplicado */
+    margin-top: 20px; /* margen superior */
+}
