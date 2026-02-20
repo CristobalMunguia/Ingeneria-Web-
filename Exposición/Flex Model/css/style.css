@@ -1,0 +1,102 @@
+/* ===== RESET GENERAL ===== */
+
+/* Selecciona todos los elementos */
+* {
+    margin: 0; /* Quita márgenes por defecto */
+    padding: 0; /* Quita padding por defecto */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+}
+
+
+/* ===== BODY ===== */
+
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    height: 800PX; /* Altura total de la pantalla */
+    
+    display: flex; /* Activa flexbox (Sin esto nada de Flex Box funciona)*/
+    flex-direction: column;    /* Flex-direction Define la dirección de los elementos.*/
+                   /*Se puede ocupar colum=columna, row=horizontal, row-reverse y column reverse */
+}
+
+/* ===== HEADER ===== */
+/* Barra superior */
+
+.header {
+    background-color: #005e99; /* Le damos color al encabezado */
+    color: white; /* Es el color a las letras del titutlo*/
+    text-align: center; /* Centra texto */
+    padding: 40px; /* Espacio interno */
+}
+
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+/* Contiene sidebar + contenido */
+.contenedor {
+    
+    flex: 1; /* Esto hace que el contenedor se estire y llene todo el espacio libre. */
+    display: flex; /* Activa flex (Sin esto, las demás propiedades no funcionan.) */
+    
+    justify-content: space-between; /* Reparte el espacio de manera uniforme entre las cajas. */
+
+}
+  
+/* ===== SIDEBAR ===== */
+
+/* Menú lateral */
+.sidebar {
+    width: 200px; /* Ancho fijo */
+    background-color: #444; /* Color gris oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+/* ===== CONTENIDO ===== */
+
+/* Área principal */
+.contenido {
+    flex: 1; /*Esto hace que el contenedor se estire y llene todo el espacio libre. */
+    display: flex; /* Activa flex */
+    flex-direction: row; /*flex-direction: row-reverse; flex-direction: row;
+                         flex-direction:column-reverse etiquetas para poder acomodar las cajas
+                         ya sea en fila o columna;*/
+    justify-content: center; /* Centra horizontal justify-content: space-between; 
+                                justify-content: space-evenly;  */
+   
+    align-items: center; /* Centra vertical */
+    
+    gap: 15px; /* Define el espacio automático entre cada elemento, sin usar márgenes.
+                  Quitar Gap para ver efecto, */
+    
+    flex-wrap: wrap; /* Si las cajas no caben en una sola línea, bajan a la siguiente, como texto 
+                    Quitar el wrap */ 
+
+    padding: 20px; /* Crea un margen interno para que las cajas no queden pegadas al borde */
+
+}
+
+
+/* ===== TARJETAS ===== */
+/* Cada caja */
+
+.card {
+    width: 120px; /* Ancho */
+    height: 120px; /* Alto */
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    
+    display: flex; /* Flex interno Si lo quitamos → el número se va a una esquina.*/
+    justify-content: center; /* Centra horizontal */
+    align-items: center; /* Centra vertical */ 
+    font-size: 48px; /* Tamaño del número */
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);  /* Lo vimos en clase es para darle animación a la caja cuando el mouse
+                                este arriba de la caja*/
+}
+
+    
